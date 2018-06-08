@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title> Brak tytułu</title>
+	<meta name="description" content="Próba Prbóa Próba" />
+	<meta name="keywords" content="słowa klucze" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="Style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/usm/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+	
+	<style>
+	.MyButton{
+	width: auto;
+	height: 30px;
+	}
+	.MyHover:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.1) !important;
+	color: black;
+	}
+	.MyIcon:hover{
+	cursor: pointer;
+	color: black;
+	}
+	.ButtonText{
+	display: none;
+	}
+	.BigButton{
+	background-color: red;
+	width: auto;
+	min-height: 480px;
+	}
+	.IconBar{
+	min-height: 80px;
+	}
+	.BackButton{
+	background-color: #cbd04c;";
+	min-height: 80px;
+	}
+	.B1{
+	padding: 25px 5px 5px 15px;
+	}
+	.B2,.B3{
+	padding: 25px 5px 5px 5px;
+	}
+	.B4{
+	padding: 25px 15px 5px 5px;
+	}
+	.R1{
+	padding-top: 5px;
+	}
+	.container-fluid{
+	color: white;
+	font-family: Georgia;
+	}
+	.MyIcon{margin: 8px;}
+	
+
+
+	
+	@media (min-width: 576px){
+		.MyButton{
+		height:115px;}
+		.BigButton{
+		height:475px;
+		min-height: inherit;
+		}
+		.R2{
+		padding-top: 25px;
+		padding-left: 5px;}
+		.B1{
+		padding-right: 0px;}
+		.B2, .B3{
+		padding: 0px 0px 5px 15px;}
+		.B4{
+		padding: 0px 0px 0px 15px;}
+		.ButtonText{
+		display: block;
+		font-size: 20px;}
+		.container-fluid{
+		font-size: 40px;}
+		.icon-undo{
+		font-size: 30px;
+		}
+		.MySign{
+		font-size: 20px;}
+		.IconBar{
+		font-size: 25px
+		float: none;
+		text-align: center;
+	}
+	@media (min-width: 768px){
+		.IB{padding-right: 5px;}
+		.BB{padding-left: 0px;}
+		.IconBar{
+		font-size: 50px;
+		float: right;}
+		.MySign{
+		font-size: 15px;}
+		.MyIcon{margin: 0.03vw;}
+	}
+	@media (min-width: 992px){
+		.MyButton{
+		min-height:240px;
+		padding-top: 40px;}
+		.B1{
+		padding: 30px 0px 10px 30px;}
+		.B2{
+		padding: 30px 5px 0px 15px;}
+		.B3{
+		padding: 0px 0px 0px 30px;}
+		.B4{
+		padding: 0px 5px 0px 15px;}
+		.R2{padding: 30px 30px 0 10px;}
+		.BigButton{height:490px;line-height: 0.8;}
+		.IB{padding: 20px 5px 30px 30px;}
+		.BB{padding: 20px 30px 30px 10px;}
+		.ButtonText{
+		display: block;
+		font-size: 25px;}
+		.container-fluid{
+		font-size: 60px;}
+		.MySign{
+		font-size: 20px;
+		padding: 20px;}
+		.IconBar{
+		font-size: 25px;
+		float: none;
+		text-align: center;}
+		.MyIcon{margin: 10px;}
+	}
+	</style>
+	
+		
+
+</head>
+<body style="background-color: #454e52;">
+<script src="test2.js"></script>
+	<div class="container-fluid"">
+		<div class="row">
+			<div class="col-sm-3 col-lg-6">
+				<div class="row">
+					<div class="col-3 col-sm-12 col-lg-6 B1">
+						<div class="MyButton text-center MyHover" onclick="AboutMe()" style="background-color: #00a2ff;">
+							<i class="icon-user"></i><span class="ButtonText">About me</span>
+						</div>
+					</div>
+					<div class="col-3 col-sm-12 col-lg-6 B2">
+						<div class="MyButton text-center MyHover" onclick="Experience()" style="background-color:#4d7166;">
+							<i class="icon-graduation-cap"></i><span class="ButtonText">Experience</span>
+						</div>
+					</div>
+					<div class="col-3 col-sm-12 col-lg-6 B3">
+						<div class="MyButton text-center MyHover" onclick="Contact()" style="background-color:#e30f0f;">
+							<i class="icon-mobile"></i><span class="ButtonText">Contact</span>
+						</div>
+					</div>
+					<div class="col-3 col-sm-12 col-lg-6 B4">
+						<div class="MyButton text-center MyHover" onclick="Work()" style="background-color:#e30f0f;">
+							<i class="icon-briefcase"></i><span class="ButtonText">What do I do</span>
+						</div>
+					</div>
+				</div>
+			</div> 
+			<div class="col-sm-9 col-lg-6 R2">
+				<div id="MyField" class="BigButton" style="background-color:#468571;"></div>
+			</div>
+			    
+		</div>
+		<div class="row">
+			<div class="col-md-6 R1 IB">
+				<div class="BackButton MyHover text-center" onclick="PriviousSite()">
+					<i class="icon-undo"></i><span class="ButtonText" style="display: inline-block;"> Take me back</span>
+				</div>
+			</div>
+			<div class="col-md-6 R1 BB">
+				<div class="IconBar">
+					<span class="MyIcon"><img src="Social icons\Telegram@1x.svg"></img></span>
+					<span class="MyIcon"><img src="Social icons\Github@1x.svg"></img></span>
+					<span class="MyIcon"><img src="Social icons\Medium@1x.svg"></img></span>
+					<span class="MyIcon"><img src="Social icons\Facebook@1x.svg"></img></span>
+					<span class="MyIcon"><img src="Social icons\Twitter@1x.svg"></img></span>
+					<span class="MySign">Adam&nbspZajączkowski </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
